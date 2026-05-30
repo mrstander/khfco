@@ -31,28 +31,28 @@ export default async function SchoolDashboardLayout({
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
       {/* Sidebar */}
-      <aside className="w-full md:w-64 bg-indigo-900 text-white flex-shrink-0">
+      <aside className="w-full md:w-64 bg-gray-900 text-white flex-shrink-0">
         <div className="p-6">
           <h2 className="text-xl font-bold font-sans truncate" title={schoolName}>{schoolName}</h2>
-          <p className="text-indigo-300 text-sm mt-1">Fundraising Platform</p>
+          <p className="text-white text-sm mt-1">Fundraising Platform</p>
         </div>
         <nav className="mt-6 flex flex-col px-4 space-y-2">
-          <Link href="/schools/dashboard" className="px-4 py-2 rounded-md hover:bg-indigo-800 transition">
+          <Link href="/schools/dashboard" className="px-4 py-2 rounded-md hover:bg-white hover:text-gray-950 transition">
             Dashboard
           </Link>
-          <Link href="/schools/events" className="px-4 py-2 rounded-md hover:bg-indigo-800 transition">
+          <Link href="/schools/events" className="px-4 py-2 rounded-md hover:bg-white hover:text-gray-950 transition">
             My Events
           </Link>
-          <Link href="/schools/students" className="px-4 py-2 rounded-md hover:bg-indigo-800 transition">
+          <Link href="/schools/students" className="px-4 py-2 rounded-md hover:bg-white hover:text-gray-950 transition">
             Students
           </Link>
-          <Link href="/schools/profile" className="px-4 py-2 rounded-md hover:bg-indigo-800 transition">
+          <Link href="/schools/profile" className="px-4 py-2 rounded-md hover:bg-white hover:text-gray-950 transition">
             School Profile
           </Link>
-          <Link href="/schools/invite" className="px-4 py-2 rounded-md hover:bg-indigo-800 transition">
+          <Link href="/schools/invite" className="px-4 py-2 rounded-md hover:bg-white hover:text-gray-950 transition">
             Invite Parents
           </Link>
-          <form action={logout} className="mt-8 border-t border-indigo-800 pt-4">
+          <form action={logout} className="mt-8 border-t border-gray-600 pt-4">
             <button type="submit" className="w-full text-left px-4 py-2 rounded-md hover:bg-red-600 transition text-red-200 hover:text-white">
               Log out
             </button>

@@ -44,12 +44,12 @@ export default function EditEventForm({ event }: { event: any }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="col-span-2 md:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="name">Event Name</label>
-            <input id="name" name="name" type="text" defaultValue={event.name} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+            <input id="name" name="name" type="text" defaultValue={event.name} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
           </div>
 
           <div className="col-span-2 md:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="type">Event Type</label>
-            <select id="type" name="type" defaultValue={event.type} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 bg-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <select id="type" name="type" defaultValue={event.type} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 bg-white focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm">
               <option value="color_run">Color Run</option>
               <option value="neon_run">Neon Night Run</option>
             </select>
@@ -57,27 +57,27 @@ export default function EditEventForm({ event }: { event: any }) {
 
           <div className="col-span-2 md:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="event_date">Date & Time</label>
-            <input id="event_date" name="event_date" type="datetime-local" defaultValue={formatDateForInput(event.event_date)} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+            <input id="event_date" name="event_date" type="datetime-local" defaultValue={formatDateForInput(event.event_date)} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
           </div>
 
           <div className="col-span-2 md:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="location">Location</label>
-            <input id="location" name="location" type="text" defaultValue={event.location} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+            <input id="location" name="location" type="text" defaultValue={event.location} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
           </div>
 
           <div className="col-span-2 md:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="ticket_price">Ticket Price (Rands)</label>
-            <input id="ticket_price" name="ticket_price" type="number" step="0.01" min="0" defaultValue={event.ticket_price} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+            <input id="ticket_price" name="ticket_price" type="number" step="0.01" min="0" defaultValue={event.ticket_price} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
           </div>
 
           <div className="col-span-2 md:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="capacity">Capacity</label>
-            <input id="capacity" name="capacity" type="number" min="1" defaultValue={event.capacity} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+            <input id="capacity" name="capacity" type="number" min="1" defaultValue={event.capacity} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
           </div>
 
           <div className="col-span-2">
             <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="description">Description</label>
-            <textarea id="description" name="description" rows={4} defaultValue={event.description} className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            <textarea id="description" name="description" rows={4} defaultValue={event.description} className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm"></textarea>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export default function EditEventForm({ event }: { event: any }) {
         )}
 
         <div className="pt-4 flex justify-end">
-          <button disabled={isPending} type="submit" className="flex justify-center py-2 px-6 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 transition-colors shadow-sm">
+          <button disabled={isPending} type="submit" className="flex justify-center py-2 px-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 disabled:opacity-50 transition-colors shadow-sm">
             {isPending ? 'Saving...' : 'Save Changes'}
           </button>
         </div>

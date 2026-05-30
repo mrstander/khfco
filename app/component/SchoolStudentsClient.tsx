@@ -47,7 +47,7 @@ export default function SchoolStudentsClient({ students }: any) {
       </div>
 
       {/* FILTER BAR */}
-      <div className="bg-white p-4 rounded-xl border shadow-sm flex flex-col md:flex-row gap-3">
+      <div className="bg-white p-4  flex flex-col md:flex-row gap-3">
 
         {/* Search */}
         <input
@@ -55,14 +55,14 @@ export default function SchoolStudentsClient({ students }: any) {
           placeholder="Search student name..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+          className="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-gray-500"
         />
 
         {/* Grade Filter */}
         <select
           value={gradeFilter}
           onChange={(e) => setGradeFilter(e.target.value)}
-          className="w-48 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+          className="w-48 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-gray-500"
         >
           <option value="all">All Grades</option>
           {grades.map((g: any) => (
@@ -75,7 +75,7 @@ export default function SchoolStudentsClient({ students }: any) {
       </div>
 
       {/* TABLE */}
-      <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
+      <div className="bg-white overflow-hidden">
 
         <table className="w-full text-left">
 

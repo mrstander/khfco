@@ -9,7 +9,7 @@ export default function HomePage() {
           School Events & Parent Engagement Platform
         </h1>
 
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-900 text-lg">
           A simple way for schools, parents, and students to manage events,
           tickets, and participation in one place.
         </p>
@@ -17,22 +17,15 @@ export default function HomePage() {
         <div className="flex gap-4 justify-center pt-4">
           <Link
             href="/login"
-            className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition font-medium"
+            className="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-indigo-700 transition font-medium"
           >
             Login
-          </Link>
-
-          <Link
-            href="/register"
-            className="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition font-medium"
-          >
-            Get Started
           </Link>
         </div>
       </div>
 
       <div className="mt-16 text-sm text-gray-400">
-        © {new Date().getFullYear()} School Platform
+        © {new Date().getFullYear()} KHF Company
       </div>
     </main>
   )

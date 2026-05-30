@@ -17,9 +17,9 @@ export default function InviteLinkCard({ schoolId, schoolName }: { schoolId: str
   return (
     <div className="space-y-8 max-w-3xl mx-auto">
       {/* Hero card */}
-      <div className="bg-linear-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 text-white shadow-lg">
+      <div className="bg-linear-to-br from-gray-600 to-gray-600 rounded-2xl p-8 text-white shadow-lg">
         <h2 className="text-2xl font-bold mb-2">Parent Invite Link</h2>
-        <p className="text-indigo-200 text-sm mb-6">
+        <p className="text-white text-sm mb-6">
           Share this link with parents so they can register under <span className="font-semibold text-white">{schoolName}</span>. 
           The link automatically assigns them to your school.
         </p>
@@ -32,8 +32,8 @@ export default function InviteLinkCard({ schoolId, schoolName }: { schoolId: str
             onClick={handleCopy}
             className={`shrink-0 px-5 py-2 rounded-lg font-semibold text-sm transition-all shadow-sm ${
               copied 
-                ? 'bg-green-400 text-white' 
-                : 'bg-white text-indigo-700 hover:bg-indigo-50'
+                ? 'bg-gray-900 text-white' 
+                : 'bg-white text-gray-900 hover:bg-gray-100'
             }`}
           >
             {copied ? '✓ Copied!' : 'Copy Link'}
@@ -52,7 +52,7 @@ export default function InviteLinkCard({ schoolId, schoolName }: { schoolId: str
           ].map(({ step, title, desc }) => (
             <li key={step} className="flex gap-4">
               <div className="shrink-0">
-                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-100 text-indigo-700 font-bold text-sm">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-gray-100 text-gray-900 font-bold text-sm">
                   {step}
                 </div>
               </div>

@@ -80,7 +80,7 @@ export default async function SchoolDashboardPage() {
         </div>
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
           <h3 className="text-gray-500 text-sm font-medium">Total Revenue</h3>
-          <p className="text-3xl font-bold text-indigo-600 mt-2">R{totalRevenue.toFixed(2)}</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">R{totalRevenue.toFixed(2)}</p>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ export default async function SchoolDashboardPage() {
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
           <h2 className="text-lg font-semibold text-gray-900">Upcoming Events</h2>
-          <Link href="/schools/events/new" className="text-sm bg-indigo-50 text-indigo-600 px-3 py-1 rounded-md hover:bg-indigo-100 transition font-medium">
+          <Link href="/schools/events/new" className="text-sm bg-indigo-50 text-gray-900 px-3 py-1 rounded-md hover:bg-indigo-100 transition font-medium">
             + New Event
           </Link>
         </div>

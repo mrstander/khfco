@@ -34,27 +34,27 @@ export default function ProfileForm({ initialData }: { initialData: any }) {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="col-span-2">
           <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="name">School Name</label>
-          <input id="name" name="name" type="text" defaultValue={initialData?.name} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input id="name" name="name" type="text" defaultValue={initialData?.name} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
         </div>
 
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="contact_person">Contact Person</label>
-          <input id="contact_person" name="contact_person" type="text" defaultValue={initialData?.contact_person} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input id="contact_person" name="contact_person" type="text" defaultValue={initialData?.contact_person} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
         </div>
 
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="email">Public Contact Email</label>
-          <input id="email" name="email" type="email" defaultValue={initialData?.email} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input id="email" name="email" type="email" defaultValue={initialData?.email} required className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
         </div>
 
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="phone">Phone Number</label>
-          <input id="phone" name="phone" type="tel" defaultValue={initialData?.phone} className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input id="phone" name="phone" type="tel" defaultValue={initialData?.phone} className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
         </div>
 
         <div className="col-span-2 md:col-span-1">
           <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="location">Address / Location</label>
-          <input id="location" name="location" type="text" defaultValue={initialData?.location} className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+          <input id="location" name="location" type="text" defaultValue={initialData?.location} className="appearance-none rounded-lg block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 text-gray-900 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" />
         </div>
       </div>
 
@@ -71,7 +71,7 @@ export default function ProfileForm({ initialData }: { initialData: any }) {
       )}
 
       <div className="pt-4 flex justify-end">
-        <button disabled={isPending} type="submit" className="flex justify-center py-2 px-6 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 transition-colors shadow-sm">
+        <button disabled={isPending} type="submit" className="flex justify-center py-2 px-6 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 disabled:opacity-50 transition-colors shadow-sm">
           {isPending ? 'Saving...' : 'Save Changes'}
         </button>
       </div>
